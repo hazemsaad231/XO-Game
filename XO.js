@@ -42,7 +42,11 @@ function winner(){
         end(3,5,7)
     }
     else{
-        
+        if(squere[1]!="" && squere[2]!="" && squere[3]!="" && squere[4]!="" && squere[5]!="" && squere[6]!="" && squere[7]!="" && squere[8]!="" && squere[9]!=""){
+            one.innerHTML = "Draw"
+            setInterval(function(){ one.innerHTML +=`.` },1000)
+            setTimeout(function(){location.reload()},4000 )
+        }
     }
     
 }
